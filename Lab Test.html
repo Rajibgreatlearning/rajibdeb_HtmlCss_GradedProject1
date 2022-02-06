@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-Test Form</title>
+    <link rel="stylesheet" href="labtest.css"/> 
+</head>
+<body>
+    <img id="image1" src="D:\Business\HTML-CSS\project task1\lab-test.jpg" />
+    <form action="" id="form-1" method="post">
+    <ol>
+    <li><h3>Contact Details</h3></li>    
+    <div>
+    <div>
+    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required />
+    <input type="text" id="patientId" name="patientId" placeholder="Patient Id if exists" required />
+    <hr/>
+    </div>
+    <div>
+    <input type="text" id="contactNo" name="contactNo" placeholder="Contact No." required />
+    <input type="text" id="emailId" name="emailId" placeholder="Email Id" required />
+    <hr/>
+    </div>
+    </div>
+    <li><h3>Address</h3></li>   
+        <div>
+        <div>
+        <input type="text" id="houseNumber" name="houseNumber" placeholder="House Number" required />
+        <input type="text" id="street" name="street" placeholder="Street" required />
+        <hr/>
+        </div>
+        <div>
+        <input type="text" id="area" name="area" placeholder="Area" required />
+        <hr/>
+        </div>
+        <br/>
+        <div>
+        <lable for="district">District</lable>
+        <select id="district" required>       
+        <option >kolkata</option>
+        <option >Howrah</option>
+        <option >East Midnapur</option>
+        <option >Siliguri</option>
+        <option >Cooch Bihar</option>
+        </select>
+        </div>
+    </div>
+    <br/>
+    <li><h3 class="check-box">Choose the Test <span id="mousehover">(Check atleast one box without fail)</span> </h3>
+    </li>
+    <div >
+        <div><label for="cbc">CBC</label><label></label></label><input type="checkbox" id="cbc"/></div>
+        <div><label for="CompleteUrine">Complete Urine</label><label></label></label><input type="checkbox" id="CompleteUrine"/></div>
+        <div><label for="cbc">Lipid Profile</label><label></label></label><input type="checkbox" id="LipidProfile"/></div>
+        <div><label for="LipidProfile">Thyroid Stimulating Hormone(TSH)
+        </label><label></label></label><input type="checkbox" id="ThyroidStimulatingHormone(TSH)
+            "/></div>
+        <div><label for="GlucoseTest">Glucose Test</label><label></label></label><input type="checkbox" id="GlucoseTest"/></div>
+    </div>
+    <li><h3>Do you want a hard copy of the report also?</h3></li>   
+    <div>
+        <div><label for="yes">Yes</label><input type="radio" id="radio1" name="choice-radio" checked></div>
+        <div><label for="no">No</label><input type="radio" id="radio2" name="choice-radio"></div>
+
+    </div>
+    <li><h3>Select Your Comfortable Date and Time</h3></li>   
+    <div>
+        <div ><label for="date" class="date-time">Date</label><input type="date" id="date"  required/></div>
+        <div ><label for="time" class="date-time">Time</label><input type="time" id="time"  required/></div>
+
+    </div>
+    <br/>
+    <!-- <h3>Reset and Submit button</h3> -->
+    
+        <!-- <input type="submit" id="submit">
+      
+        <input type="reset" id="reset"> -->
+    </ol>   
+        <div id="btn">
+            <button class="button">submit</button>
+            <button class="button">Reset</button>
+        </div>
+        
+        
+    </form>
+    
+</body>
+</html>

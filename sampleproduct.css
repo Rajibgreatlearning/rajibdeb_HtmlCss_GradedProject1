@@ -1,0 +1,56 @@
+body{
+    background-color: azure; 
+
+}
+.class1{
+    color: steelblue;
+    padding-left: 2%;
+}
+
+button{
+   block-size: 2rem;
+    background-color: rgb(199, 245, 240);
+    border: 1px solid blue;
+}  
+      
+
+#block1 .line1{
+    display: inline-block;
+    position: relative;
+    background-position: center;
+    background-size: cover;           
+    /* height: 90px; */
+    width: 15%;           
+    padding-left: 4%; 
+    padding-top: 0%; 
+    padding-right: 5%;  
+}
+
+#block2 .line1{
+    display: inline-block;
+    /* height: 90px; */
+    width: 15%;            
+    padding-left: 4%; 
+    padding-top: 1%;
+    padding-right: 5%;         
+
+    
+}
+img{
+    height: 80%;
+    width: 80%;
+}
+span div:nth-child(1){
+    font-weight: bold;
+    padding-bottom: 1%;
+    font-size: 1em;
+}
+h2{
+    padding-left: 1em;
+}
+
+
+span:hover{
+    background-color: rgb(167, 182, 192);
+   
+}

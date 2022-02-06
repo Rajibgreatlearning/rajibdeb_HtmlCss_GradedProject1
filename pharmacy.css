@@ -1,0 +1,134 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
+h1{
+    
+    background-color: rgb(0, 0, 0,.7);
+    color: rgb(255,255,255);           
+    text-align: center;
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position:relative;
+
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255,255,255);
+    text-align:center;
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    
+}
+
+#navigation{
+    top: 0%;
+    z-index: 1;
+    position: sticky;
+
+}
+.menu{
+    margin: 0%;
+    background-color: rgb(0, 0,0, 0.5);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+    
+    
+}
+li a {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 13px;
+    font-size: 30px;
+    
+    text-decoration: none;
+    
+  
+}
+
+#dropdown_01 li a, #dropdown_02 li a{
+    color: blue;
+   /* background-color: burlywood;*/           
+    
+    padding: 12px 16px;
+   /* box-shadow: 0px 8px 16px 0px rgba(255,100,100,0.2);*/
+    display: inline-block;
+    min-width: 180px;
+    text-align: left;           
+    z-index: 1;
+}
+
+
+/*.menu li:hover{
+    background-color: rgb(0, 0,0, 0.2);
+}*/
+a:hover{
+    background-color: rgb(0, 0,0, 0.2);
+
+}
+
+.menu li:nth-child(2):hover #dropdown_01,li:nth-child(3):hover #dropdown_02 {
+    display: block;
+    
+}
+
+#dropdown_01, #dropdown_02{
+    
+    max-width: 200px;
+    display: none;
+    background-color: whitesmoke;
+    padding: 0%;
+    position: absolute;
+}
+
+.photos {  
+    background-image: url("ani1.jpg"); 
+    background-color: #cccccc;
+    
+    height:550px;
+    border: 5px solid steelblue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+    position: relative;
+           
+    background-size:cover; 
+
+    transition: 1s;           
+    animation-name: animation;
+    animation-direction:normal;
+    animation-duration: 50s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function:ease-in-out; 
+   
+
+}  
+
+@keyframes animation {
+
+  0%{
+     background-image: url("ani1.jpg");
+    }20%{
+     background-image: url("ani2.png");
+    }40%{
+     background-image: url("ani3.jpg");
+    }60%{
+     background-image: url("ani4.jpg");
+    }80%{
+     background-image: url("ani5.jpg");
+    }100%{
+     background-image: url("ani1.jpg");
+    }
+}
